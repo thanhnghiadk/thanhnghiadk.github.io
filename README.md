@@ -148,9 +148,9 @@ A process-aware scoring framework for geometric construction problems using digi
 
 <!-- Replace YOUR_GITHUB_USERNAME with your actual GitHub username -->
 
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=YOUR_GITHUB_USERNAME&show_icons=true&theme=default)
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=thanhnghiadk&show_icons=true&theme=default)
 
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=YOUR_GITHUB_USERNAME&layout=compact)
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=thanhnghiadk&layout=compact)
 
 ---
 
