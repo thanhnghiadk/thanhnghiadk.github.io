@@ -159,7 +159,7 @@ A process-aware scoring framework for geometric construction problems using digi
 - **Google Scholar:** https://scholar.google.com/citations?hl=en&user=pzpt9sYAAAAJ
 - **ResearchGate:** https://www.researchgate.net/profile/Thanh-Nghia-Truong-2
 - **researchmap:** https://researchmap.jp/thanhnghia
-- **Email:** add-your-email-here
+- **Email:** thanhnghiadk@gmail.com
 
 ---
 
