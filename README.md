@@ -159,6 +159,7 @@ A process-aware scoring framework for geometric construction problems using digi
   <a href="https://scholar.google.com/citations?hl=en&user=pzpt9sYAAAAJ"><img src="https://img.shields.io/badge/Google%20Scholar-Profile-blue" /></a>
   <a href="https://www.researchgate.net/profile/Thanh-Nghia-Truong-2"><img src="https://img.shields.io/badge/ResearchGate-Profile-00CCBB" /></a>
   <a href="https://researchmap.jp/thanhnghia"><img src="https://img.shields.io/badge/researchmap-Profile-lightgrey" /></a>
+  </br>
   **Email:** thanhnghiadk@gmail.com
 
 ---
