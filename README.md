@@ -1,6 +1,6 @@
 # Hi, I'm Thanh-Nghia Truong 👋
 
-**AI Researcher | Handwriting Recognition | Graph Neural Networks | Educational AI**
+|AI Researcher | Handwriting Recognition | Graph Neural Networks | Educational AI|
 
 I am an AI researcher working on **handwritten mathematical expression recognition**, **document analysis**, **digital ink processing**, and **automatic scoring of handwritten answers**. My research focuses on building AI systems that understand not only visual patterns, but also the **structure, relations, and reasoning processes** behind handwritten mathematical and scientific work.
 
@@ -144,15 +144,15 @@ A process-aware scoring framework for geometric construction problems using digi
 
 ---
 
-## 📈 GitHub Stats
+<!--## 📈 GitHub Stats
 
-<!-- Replace YOUR_GITHUB_USERNAME with your actual GitHub username -->
+<!-- Replace YOUR_GITHUB_USERNAME with your actual GitHub username 
 
 ![GitHub Stats](https://github-readme-stats.vercel.app/api?username=thanhnghiadk&show_icons=true&theme=default)
 
 ![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=thanhnghiadk&layout=compact)
 
----
+----->
 
 ## 📫 Contact
 
