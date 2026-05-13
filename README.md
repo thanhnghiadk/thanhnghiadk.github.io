@@ -1,7 +1,7 @@
 # Hi, I'm Thanh-Nghia Truong 👋
 
 **AI Researcher / Applied AI Engineer**  
-**Computer Vision | Multimodal AI | Handwriting Recognition | Graph Neural Networks | Educational AI**
+**Computer Vision · Multimodal AI · Handwriting Recognition · Graph Neural Networks · Educational AI**
 
 I am an AI researcher and Assistant Professor at the **WACOM-TUAT Joint Research Lab, Tokyo University of Agriculture and Technology**. My work focuses on building AI systems that understand handwritten and visual information, including **handwritten mathematical expression recognition**, **document analysis**, **digital ink processing**, and **automatic scoring of handwritten answers**.
 
