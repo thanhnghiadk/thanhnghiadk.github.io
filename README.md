@@ -1,42 +1,127 @@
 # Hi, I'm Thanh-Nghia Truong 👋
 
-|AI Researcher | Handwriting Recognition | Graph Neural Networks | Educational AI|
+**AI Researcher / Applied AI Engineer**  
+**Computer Vision · Multimodal AI · Handwriting Recognition · Graph Neural Networks · Educational AI**
 
-I am an AI researcher working on **handwritten mathematical expression recognition**, **document analysis**, **digital ink processing**, and **automatic scoring of handwritten answers**. My research focuses on building AI systems that understand not only visual patterns, but also the **structure, relations, and reasoning processes** behind handwritten mathematical and scientific work.
+I am an AI researcher and Assistant Professor at the **WACOM-TUAT Joint Research Lab, Tokyo University of Agriculture and Technology**. My work focuses on building AI systems that understand handwritten and visual information, including **handwritten mathematical expression recognition**, **document analysis**, **digital ink processing**, and **automatic scoring of handwritten answers**.
+
+My research combines **computer vision**, **deep learning**, **graph neural networks**, and **multimodal learning** to model not only visual patterns, but also the **structure, spatial relations, and reasoning processes** behind handwritten mathematical and scientific work.
 
 <p align="left">
   <a href="https://scholar.google.com/citations?hl=en&user=pzpt9sYAAAAJ"><img src="https://img.shields.io/badge/Google%20Scholar-Profile-blue" /></a>
   <a href="https://www.researchgate.net/profile/Thanh-Nghia-Truong-2"><img src="https://img.shields.io/badge/ResearchGate-Profile-00CCBB" /></a>
   <a href="https://researchmap.jp/thanhnghia"><img src="https://img.shields.io/badge/researchmap-Profile-lightgrey" /></a>
+  <a href="mailto:thanhnghiadk@gmail.com"><img src="https://img.shields.io/badge/Email-Contact-red" /></a>
 </p>
 
 ---
 
-## 🔬 Research Interests
+## 🔍 About Me
 
-- **Handwritten Mathematical Expression Recognition (HMER)**
-- **Graph Neural Networks for Structural Pattern Recognition**
-- **Online and Offline Handwriting Recognition**
-- **Mathematical Expression Structure Analysis**
-- **Automatic Scoring of Handwritten Answers**
-- **Educational AI and Learning Analytics**
-- **Digital Ink Processing: InkML, stroke data, and handwriting traces**
+- Assistant Professor at **WACOM-TUAT Joint Research Lab**, Tokyo University of Agriculture and Technology
+- Ph.D. in Computer Science from **Tokyo University of Agriculture and Technology**
+- Research experience in **handwriting recognition, document analysis, computer vision, and educational AI**
+- Applied AI experience in **object detection, classification, tracking, recommendation systems, and AI deployment**
+- Interested in **multimodal AI**, especially online/offline handwriting recognition and vision-language-style structure understanding
+- Comfortable working across research, prototyping, system development, and deployment
+
+---
+
+## 🧠 Research & Technical Interests
+
+- Handwritten Mathematical Expression Recognition (HMER)
+- Graph Neural Networks for structural pattern recognition
+- Online/offline handwriting recognition and multimodal learning
+- Mathematical expression structure analysis
+- Automatic scoring of handwritten and descriptive answers
+- Educational AI and learning analytics
+- Digital ink processing: InkML, LG files, stroke data, and handwriting traces
+- Computer vision for detection, classification, tracking, and segmentation
+- AI systems, REST APIs, model deployment, and data pipelines
 
 ---
 
 ## 🚀 Current Research Directions
 
-### 1. Graph-based Handwritten Mathematical Expression Recognition
-I work on methods for recognizing handwritten mathematical expressions by modeling symbols and spatial relations as structured graphs. My recent direction explores **edge-aware graph attention networks**, **relation prediction**, and **symbol-relation structure modeling** for robust HME understanding.
+### Graph-based Handwritten Mathematical Expression Recognition
+I develop models that represent handwritten mathematical expressions as structured graphs of symbols and spatial relations. My recent work explores **edge-aware graph attention networks**, **relation prediction**, and **symbol-relation structure modeling** for robust mathematical expression understanding.
 
-### 2. Automatic Scoring of Handwritten Answers
-I develop AI-based approaches for scoring handwritten answers in Japanese, English, mathematics, and scientific subjects. The goal is to combine handwriting recognition, answer similarity, rejection mechanisms, and human-in-the-loop verification for reliable educational assessment.
+### Multimodal Handwriting Recognition
+I am interested in combining **online handwriting signals** such as pen trajectory, stroke order, and timestamps with **offline visual representations** from rendered handwriting images. This direction connects handwriting recognition with broader multimodal AI research.
 
-### 3. Process-aware Geometry Learning and E-compass Data Analysis
-I am also working on automatic assessment of geometric construction processes using digital ink and instrumented drawing tools. This includes primitive extraction, geometric reasoning, and step-wise evaluation of students' construction processes.
+### Automatic Scoring of Handwritten Answers
+I work on AI-based approaches for scoring handwritten answers in mathematics, science, Japanese, and English. My research combines recognition, answer similarity, confidence estimation, rejection mechanisms, and human-in-the-loop verification.
 
-### 4. Handwriting Input Systems for LMS Platforms
-I have worked on Moodle-based handwriting input and recognition systems that allow learners to submit handwritten answers for math, chemistry, Japanese, and English questions while preserving original handwriting traces for further analysis.
+### Process-aware Geometry Learning
+I study automatic assessment of geometric construction processes using digital ink and instrumented drawing tools, including primitive extraction, geometric reasoning, and step-wise evaluation of students' construction processes.
+
+### Handwriting Input Systems for LMS Platforms
+I have developed Moodle-based handwriting input and recognition systems that allow students to submit handwritten answers for math, chemistry, Japanese, and English questions while preserving original handwriting traces for further analysis.
+
+---
+
+## 🧩 Featured Projects
+
+### Edge-aware GAT for HME Structure Recognition
+A graph neural network model for predicting spatial relations between handwritten mathematical symbols using edge-aware attention and relation decoding.
+
+**Keywords:** PyTorch Geometric, GATv2Conv, relation prediction, CROHME, InkML, LG files
+
+---
+
+### HAIMR: Handwritten Answer Input, Management, and Recognition for Moodle
+A Moodle plugin that supports handwritten answer input and recognition for Japanese, English, mathematical expressions, and chemical formulas.
+
+**Keywords:** Moodle, handwriting interface, REST API, MathJax, handwriting recognition, educational assessment
+
+---
+
+### Automatic Scoring for Handwritten Descriptive Answers
+A system for recognizing and scoring handwritten answers using online/offline handwriting recognizers, answer similarity, confidence-based rejection, and human-in-the-loop verification.
+
+**Keywords:** automatic scoring, handwritten answers, answer similarity, rejection option, educational AI
+
+---
+
+### E-compass Automatic Scoring for Geometric Construction
+A process-aware scoring framework for geometric construction problems using digital ink from an electronic drawing compass.
+
+**Keywords:** digital ink, geometry reasoning, primitive extraction, arcs, lines, intersections, step-wise scoring
+
+---
+
+### Applied AI Projects
+I have also worked on several practical AI applications, including:
+
+- HME recognition server
+- Sushi recognition
+- Japanese wine classification
+- Asian face recognition
+- Object detection and tracking
+- Real-time video analytics
+- Recommendation and data systems
+
+---
+
+## 🛠️ Technical Skills
+
+**Machine Learning / Deep Learning**  
+Python, PyTorch, PyTorch Geometric, TensorFlow, NumPy, ONNX, OpenCV
+
+**Computer Vision / Pattern Recognition**  
+Object detection, classification, tracking, image segmentation, handwriting recognition, document analysis
+
+**Data & Backend Systems**  
+SQL, MySQL, MongoDB, NoSQL, REST API, data crawling, data processing pipelines
+
+**Deployment & Tools**  
+Linux, Git, AWS, FFMPEG, Jupyter, Matplotlib, TensorBoard, LaTeX
+
+**Programming Languages**  
+Python, C/C++, C#, Java
+
+**Data Formats**  
+InkML, LG, JSON, digital ink traces, stroke-based data
 
 ---
 
@@ -60,25 +145,9 @@ I have worked on Moodle-based handwriting input and recognition systems that all
   *ACPR / LNCS, 2021–2022*  
   Thanh-Nghia Truong, Hung Tuan Nguyen, Cuong Tuan Nguyen, Masaki Nakagawa
 
-- **Relation-Based Representation for Handwritten Mathematical Expression Recognition**  
-  *ICDAR Workshops, 2021*  
-  Thanh-Nghia Truong, Huy Quang Ung, Hung Tuan Nguyen, Cuong Tuan Nguyen, Masaki Nakagawa
-
-- **Global Context for Improving Recognition of Online Handwritten Mathematical Expressions**  
-  *ICDAR, 2021*  
-  Cuong Tuan Nguyen, Thanh-Nghia Truong, Hung Tuan Nguyen, Masaki Nakagawa
-
-- **A Transformer-Based Math Language Model for Handwritten Math Expression Recognition**  
-  *ICDAR Workshops, 2021*  
-  Huy Quang Ung, Cuong Tuan Nguyen, Hung Tuan Nguyen, Thanh-Nghia Truong, Masaki Nakagawa
-
 - **Improvement of End-to-End Offline Handwritten Mathematical Expression Recognition by Weakly Supervised Learning**  
   *ICFHR, 2020*  
   Thanh-Nghia Truong, Cuong Tuan Nguyen, Khanh Minh Phan, Masaki Nakagawa
-
-- **Online Handwritten Mathematical Symbol Segmentation and Recognition with Bidirectional Context**  
-  *ICFHR, 2020*  
-  Cuong Tuan Nguyen, Thanh-Nghia Truong, Huy Quang Ung, Masaki Nakagawa
 
 ### Automatic Scoring and Educational AI
 
@@ -94,78 +163,35 @@ I have worked on Moodle-based handwriting input and recognition systems that all
   *ICDAR, 2024*  
   Thanh-Nghia Truong, Hung Tuan Nguyen, Nam Tuan Ly, Toshihiko Horie, Masaki Nakagawa
 
-- **Two Experiments for Automatic Scoring of Handwritten Descriptive Answers**  
-  *DAS, 2024*  
-  Masaki Nakagawa, Hung Tuan Nguyen, Nghia Thanh Truong, Nam Tuan Ly, Cuong Tuan Nguyen, Haruki Oka, Tsunenori Ishioka, Tomo Asakura, Hiroshi Miyazawa, Takahiro Yamamoto, Toshihiko Horie, Fumiko Yasuno
-
 - **Enhancing LMS-Based Assessment with Handwriting Input: The Design and Implementation of HAIMR**  
   *CADGME, 2025*  
   Thanh-Nghia Truong, Hung Tuan Nguyen, Masaki Nakagawa
 
-### Earlier Work
-
-- **Medical Images Sequence Normalization and Augmentation: Improve Liver Tumor Segmentation from Small Dataset**  
-  *CRC, 2018*  
-  Thanh-Nghia Truong, Vu-Duy Dam, Thanh-Sach Le
+For the full publication list, please see my [Google Scholar profile](https://scholar.google.com/citations?hl=en&user=pzpt9sYAAAAJ).
 
 ---
 
-## 🧩 Featured Projects
+## 🌐 Languages
 
-### Edge-aware GAT for HME Structure Recognition
-A graph neural network model for predicting spatial relations between handwritten mathematical symbols using edge-aware attention and relation decoding.
-
-**Keywords:** PyTorch Geometric, GATv2Conv, relation prediction, CROHME, InkML, LG files
-
-### HAIMR: Handwritten Answer Input, Management, and Recognition for Moodle
-A Moodle plugin that supports handwritten answer input and recognition for Japanese, English, mathematical expressions, and chemical formulas.
-
-**Keywords:** Moodle, handwriting interface, REST API, MathJax, handwriting recognition, educational assessment
-
-### Automatic Scoring for Handwritten Descriptive Answers
-A system for recognizing and scoring handwritten answers using online/offline handwriting recognizers, answer similarity, confidence-based rejection, and human-in-the-loop verification.
-
-**Keywords:** automatic scoring, handwritten answers, answer similarity, rejection option, educational AI
-
-### E-compass Automatic Scoring for Geometric Construction
-A process-aware scoring framework for geometric construction problems using digital ink from an electronic drawing compass.
-
-**Keywords:** digital ink, geometry reasoning, primitive extraction, arcs, lines, intersections, step-wise scoring
+- Vietnamese: Native
+- English: Professional communication, research presentations, international conferences
+- Japanese: Intermediate level, around JLPT N3
 
 ---
-
-## 🛠️ Technical Skills
-
-**Programming & ML:** Python, PyTorch, PyTorch Geometric, TensorFlow, OpenCV  
-**Research Areas:** Pattern Recognition, Document Analysis, Handwriting Recognition, Graph Neural Networks  
-**Data Formats:** InkML, LG, JSON, digital ink traces, stroke-based data  
-**Systems:** Moodle plugin development, REST APIs, handwriting recognition servers  
-**Tools:** LaTeX, Git, Linux, Jupyter, Matplotlib, TensorBoard
-
----
-
-<!--## 📈 GitHub Stats
-
-<!-- Replace YOUR_GITHUB_USERNAME with your actual GitHub username 
-
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=thanhnghiadk&show_icons=true&theme=default)
-
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=thanhnghiadk&layout=compact)
-
------>
 
 ## 📫 Contact
 
+<p align="left">
+  <a href="mailto:thanhnghiadk@gmail.com"><img src="https://img.shields.io/badge/Email-thanhnghiadk%40gmail.com-red" /></a>
   <a href="https://scholar.google.com/citations?hl=en&user=pzpt9sYAAAAJ"><img src="https://img.shields.io/badge/Google%20Scholar-Profile-blue" /></a>
   <a href="https://www.researchgate.net/profile/Thanh-Nghia-Truong-2"><img src="https://img.shields.io/badge/ResearchGate-Profile-00CCBB" /></a>
   <a href="https://researchmap.jp/thanhnghia"><img src="https://img.shields.io/badge/researchmap-Profile-lightgrey" /></a>
-
-
-  **Email:** thanhnghiadk@gmail.com
+</p>
 
 ---
 
-## 🧠 Research Vision
+## 🧭 Research Vision
 
-My long-term goal is to develop AI systems that can understand **human handwritten reasoning processes**, especially in mathematics and science education. I am interested in combining handwriting recognition, graph-based structural reasoning, multimodal learning, and educational assessment to support reliable, interpretable, and process-aware learning technologies.
+My long-term goal is to develop AI systems that can understand **human-generated visual and multimodal information**, including handwriting, documents, diagrams, and learning processes.
 
+I am particularly interested in combining **computer vision**, **graph-based structural reasoning**, **online/offline handwriting recognition**, and **multimodal learning** to build reliable and interpretable AI systems. My research aims to bridge academic advances in pattern recognition with practical applications in education, document intelligence, and human-centered AI.
