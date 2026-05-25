@@ -248,9 +248,36 @@
     return `${rootPrefix}posts/publications/${post.slug}.html`;
   }
 
-  function mailtoUrl(post) {
+  function mailtoUrl(post, comment = {}) {
     const subject = encodeURIComponent(`Comment on publication: ${post.title}`);
-    return `mailto:${contactEmail}?subject=${subject}`;
+    const bodyLines = [`Publication: ${post.title}`];
+
+    if (comment.name) bodyLines.push(`Name: ${comment.name}`);
+    if (comment.email) bodyLines.push(`Email: ${comment.email}`);
+    if (comment.text) bodyLines.push('', comment.text);
+
+    return `mailto:${contactEmail}?subject=${subject}&body=${encodeURIComponent(bodyLines.join('\n'))}`;
+  }
+
+  function commentStorageKey(post) {
+    return `publication-comments:${post.slug}`;
+  }
+
+  function readComments(post) {
+    try {
+      return JSON.parse(localStorage.getItem(commentStorageKey(post)) || '[]');
+    } catch (error) {
+      return [];
+    }
+  }
+
+  function writeComments(post, comments) {
+    try {
+      localStorage.setItem(commentStorageKey(post), JSON.stringify(comments));
+      return true;
+    } catch (error) {
+      return false;
+    }
   }
 
   function contributionItems(post) {
@@ -270,6 +297,86 @@
     setMeta('meta[name="description"]', 'content', description);
     setMeta('meta[property="og:title"]', 'content', title);
     setMeta('meta[property="og:description"]', 'content', description);
+  }
+
+  function commentItems(post) {
+    const comments = readComments(post);
+    if (!comments.length) return '<p class="comment-empty">No comments yet.</p>';
+
+    return comments.map((comment) => `
+      <article class="comment-item">
+        <div class="comment-meta">
+          <strong>${escapeHtml(comment.name || comment.email || 'Anonymous')}</strong>
+          <span>${escapeHtml(comment.date)}</span>
+        </div>
+        <p>${escapeHtml(comment.text)}</p>
+      </article>
+    `).join('');
+  }
+
+  function syncCommentList(post) {
+    const list = document.querySelector('[data-comment-list]');
+    if (list) list.innerHTML = commentItems(post);
+  }
+
+  function commentFormValues(form) {
+    const nameInput = form.querySelector('[name="comment-name"]');
+    const emailInput = form.querySelector('[name="comment-email"]');
+    const textInput = form.querySelector('[name="comment-text"]');
+
+    return {
+      nameInput,
+      emailInput,
+      textInput,
+      name: nameInput.value.trim(),
+      email: emailInput.value.trim(),
+      text: textInput.value.trim()
+    };
+  }
+
+  function bindCommentForm(post) {
+    const form = document.querySelector('[data-comment-form]');
+    if (!form) return;
+
+    const emailLink = form.querySelector('[data-comment-email]');
+    if (emailLink) {
+      emailLink.addEventListener('click', () => {
+        emailLink.href = mailtoUrl(post, commentFormValues(form));
+      });
+    }
+
+    form.addEventListener('submit', (event) => {
+      event.preventDefault();
+      const status = form.querySelector('[data-comment-status]');
+      const { nameInput, emailInput, textInput, name, email, text } = commentFormValues(form);
+
+      if (!name && !email) {
+        status.textContent = 'Please enter your name or email.';
+        nameInput.focus();
+        return;
+      }
+
+      if (!text) {
+        status.textContent = 'Please write a comment.';
+        textInput.focus();
+        return;
+      }
+
+      const comments = readComments(post);
+      comments.unshift({
+        name,
+        email,
+        text,
+        date: new Date().toLocaleString()
+      });
+      if (!writeComments(post, comments)) {
+        status.textContent = 'Comment could not be saved in this browser. Please use Email comment instead.';
+        return;
+      }
+      syncCommentList(post);
+      form.reset();
+      status.textContent = 'Comment saved in this browser.';
+    });
   }
 
   function renderPostPage() {
@@ -292,15 +399,14 @@
         <div class="toc-title">Publication post</div>
         <a href="#abstract">Abstract</a>
         <a href="#contributions">Contributions</a>
-        <a href="#access">Paper/code</a>
+        <a href="#access">${post.codeUrl ? 'Paper/code' : 'Paper'}</a>
         <a href="#comments">Comments</a>
       `;
     }
 
     const paperLink = post.paperUrl || scholarUrl(post.title);
-    const codeContent = post.codeUrl
-      ? `<a class="access-card" href="${escapeHtml(post.codeUrl)}"><span>Code</span><strong>Open repository</strong></a>`
-      : '<div class="access-card is-disabled"><span>Code</span><strong>Add repository link if public</strong></div>';
+    const codeContent = post.codeUrl ? `<a class="access-card" href="${escapeHtml(post.codeUrl)}"><span>Code</span><strong>Open repository</strong></a>` : '';
+    const accessTitle = post.codeUrl ? 'Paper and Code Access' : 'Paper Access';
 
     article.innerHTML = `
       <div class="post-kicker">${escapeHtml(categoryLabels[post.category] || 'Publication')}</div>
@@ -318,7 +424,7 @@
       <h2 id="contributions">Key Contributions</h2>
       <ul class="clean">${contributionItems(post)}</ul>
 
-      <h2 id="access">Paper and Code Access</h2>
+      <h2 id="access">${accessTitle}</h2>
       <div class="access-grid">
         <a class="access-card" href="${escapeHtml(paperLink)}"><span>Paper</span><strong>${post.paperUrl ? 'Open paper' : 'Find paper on Google Scholar'}</strong></a>
         ${codeContent}
@@ -328,12 +434,33 @@
       <section class="comment-panel">
         <h3>Author Comment</h3>
         <p>${escapeHtml(post.authorComment || defaultAuthorComment)}</p>
-        <div class="comment-actions">
-          <a class="button" href="${escapeHtml(mailtoUrl(post))}">Send a comment</a>
-        </div>
-        <p class="comment-note">This is a static GitHub Pages site. Public threaded comments can be added later with a service such as Giscus or Utterances after the GitHub repository discussion/issue settings are configured.</p>
+        <form class="comment-form" data-comment-form>
+          <div class="comment-fields">
+            <label>
+              <span>Name</span>
+              <input type="text" name="comment-name" autocomplete="name" />
+            </label>
+            <label>
+              <span>Email</span>
+              <input type="email" name="comment-email" autocomplete="email" />
+            </label>
+          </div>
+          <label>
+            <span>Comment</span>
+            <textarea name="comment-text" rows="5"></textarea>
+          </label>
+          <div class="comment-actions">
+            <button class="button primary" type="submit">Leave comment</button>
+            <a class="button" href="${escapeHtml(mailtoUrl(post))}" data-comment-email>Email comment</a>
+          </div>
+          <p class="comment-status" data-comment-status></p>
+        </form>
+        <div class="comment-list" data-comment-list>${commentItems(post)}</div>
+        <p class="comment-note">On this static GitHub Pages site, comments are saved in the current browser. Use email if you want to send the comment to the author.</p>
       </section>
     `;
+
+    bindCommentForm(post);
   }
 
   function renderPostList() {
