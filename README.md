@@ -15,6 +15,10 @@ The full portfolio/CV site is maintained as the source of truth:
 - Publications: https://thanhnghiadk.github.io/publications.html
 - CV: https://thanhnghiadk.github.io/cv.html
 
+## Publication posts
+
+Publication post metadata is maintained in `assets/publication-posts.js`. Each publication has a static URL under `posts/publications/`; update the matching object in the data file to fill the abstract, contribution bullets, paper link, code link, and author comment.
+
 ## Profiles
 
 - Google Scholar: https://scholar.google.com/citations?hl=en&user=pzpt9sYAAAAJ
