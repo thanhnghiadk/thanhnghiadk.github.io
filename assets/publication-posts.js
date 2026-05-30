@@ -240,6 +240,10 @@
       .replace(/'/g, '&#039;');
   }
 
+  function formatAuthors(value) {
+    return escapeHtml(value).replace(/Thanh-Nghia Truong/g, '<span class="author-self">Thanh-Nghia Truong</span>');
+  }
+
   function scholarUrl(title) {
     return `https://scholar.google.com/scholar?q=${encodeURIComponent(title)}`;
   }
@@ -413,7 +417,7 @@
       <h1>${escapeHtml(post.title)}</h1>
       <p class="lead">${escapeHtml(post.venue)}, ${escapeHtml(post.year)}</p>
       <dl class="publication-facts">
-        <div><dt>Authors</dt><dd>${escapeHtml(post.authors)}</dd></div>
+        <div><dt>Authors</dt><dd>${formatAuthors(post.authors)}</dd></div>
         <div><dt>Venue</dt><dd>${escapeHtml(post.venue)}</dd></div>
         <div><dt>Year</dt><dd>${escapeHtml(post.year)}</dd></div>
       </dl>
@@ -477,7 +481,7 @@
               <a class="post-item" href="${escapeHtml(postUrl(post))}">
                 <div class="post-date">${escapeHtml(post.venue)} · ${escapeHtml(post.year)}</div>
                 <h3>${escapeHtml(post.title)}</h3>
-                <p>${escapeHtml(post.authors)}</p>
+                <p>${formatAuthors(post.authors)}</p>
               </a>
             `).join('')}
           </div>

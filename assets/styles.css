@@ -258,6 +258,7 @@ ul.clean li { margin: .35rem 0; }
 .publication-title { font-weight: 720; color: var(--text); line-height: 1.35; }
 .publication-title a { color: inherit; }
 .publication-meta { color: var(--muted); font-size: .94rem; margin-top: 2px; overflow-wrap: anywhere; }
+.author-self { text-decoration: underline; text-decoration-thickness: .08em; text-underline-offset: .18em; font-weight: 740; }
 .publication-actions { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 8px; }
 .publication-actions a {
   display: inline-flex;
