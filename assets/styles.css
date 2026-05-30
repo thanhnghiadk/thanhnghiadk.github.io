@@ -259,6 +259,23 @@ ul.clean li { margin: .35rem 0; }
 .publication-title a { color: inherit; }
 .publication-meta { color: var(--muted); font-size: .94rem; margin-top: 2px; overflow-wrap: anywhere; }
 .author-self { text-decoration: underline; text-decoration-thickness: .08em; text-underline-offset: .18em; font-weight: 740; }
+.pub-type {
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid color-mix(in srgb, var(--pub-type-color, var(--accent)) 34%, var(--line));
+  border-radius: 999px;
+  padding: 1px 7px;
+  color: var(--pub-type-color, var(--accent));
+  background: color-mix(in srgb, var(--pub-type-color, var(--accent)) 11%, var(--surface));
+  font-size: .72rem;
+  font-weight: 800;
+  line-height: 1.35;
+  vertical-align: .08em;
+  white-space: nowrap;
+}
+.pub-type.is-journal { --pub-type-color: #0f766e; }
+.pub-type.is-conference { --pub-type-color: #b45309; }
+.pub-type.is-workshop { --pub-type-color: #6d28d9; }
 .publication-actions { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 8px; }
 .publication-actions a {
   display: inline-flex;
