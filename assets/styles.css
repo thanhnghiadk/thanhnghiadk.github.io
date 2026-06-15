@@ -278,7 +278,7 @@ ul.clean li { margin: .35rem 0; }
 .pub-type.is-workshop { --pub-type-color: #6d28d9; }
 .pub-type.is-technical-report { --pub-type-color: #2563eb; }
 .pub-type.is-thesis { --pub-type-color: #64748b; }
-.pub-type.is-award { --pub-type-color: #a16207; }
+.pub-type.is-award { --pub-type-color: #be123c; }
 .publication-actions { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 8px; }
 .publication-actions a {
   display: inline-flex;
