@@ -141,6 +141,23 @@
       contributions: []
     },
     {
+      slug: 'moodle-plugin-handwritten-answer-recognition-2026',
+      category: 'scoring',
+      title: 'A Moodle Plugin for Handwritten Answer Input, Management, and Recognition Supporting Japanese, English, Mathematical, and Chemical Formulas',
+      venue: 'IEICE Transactions on Information and Systems',
+      year: '2026',
+      authors: 'Thanh-Nghia Truong, Hung Tuan Nguyen, Fumiko Yasuno, Vu Ngoc Thanh Sang, Pham The Bao, Cuong Tuan Nguyen, Masaki Nakagawa',
+      paperUrl: 'https://doi.org/10.1587/transinf.2025EDP7256',
+      abstract: 'This paper presents a Moodle plugin for handwritten answer input, management, and recognition. The system supports Japanese, English, mathematical formulas, and chemical formulas, allowing learners to submit handwritten responses while preserving answer data for management, recognition, review, and assessment workflows.',
+      contributions: [
+        'Presents a Moodle plugin for handwritten answer input, management, and recognition.',
+        'Supports Japanese, English, mathematical formulas, and chemical formulas in LMS-based assessment.',
+        'Provides an online publication record on J-STAGE / IEICE with DOI 10.1587/transinf.2025EDP7256.',
+        'Records the article/manuscript ID 2025EDP7256 and scheduled bibliographic placement in Vol. E109-D, No. 12, pp.-, Dec. 2026.'
+      ],
+      authorComment: 'Advance online publication on J-STAGE / IEICE: June 16, 2026. Scheduled volume information from IEICE: Vol. E109-D, No. 12, pp.-, Dec. 2026. Article/Manuscript ID: 2025EDP7256.'
+    },
+    {
       slug: 'recognition-scoring-handwritten-short-answer-2025',
       category: 'scoring',
       title: 'Automated Recognition and Scoring of Handwritten Short Answer: Insights from Japanese Elementary and Junior High Schools',
@@ -510,7 +527,7 @@
       actions.className = 'publication-actions';
       actions.innerHTML = `
         <a href="${escapeHtml(postUrl(post))}">Post</a>
-        <a href="${escapeHtml(scholarUrl(post.title))}">Paper</a>
+        <a href="${escapeHtml(post.paperUrl || scholarUrl(post.title))}">Paper</a>
       `;
       item.appendChild(actions);
     });
