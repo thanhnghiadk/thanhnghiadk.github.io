@@ -4,7 +4,7 @@
       slug: 'edge-aware-relation-prediction-online-hme-2026',
       category: 'hme',
       title: 'Edge-Aware Relation Prediction for Symbol-Level Structure Refinement in Online Handwritten Mathematical Expressions',
-      venue: 'DAS',
+      venue: 'DAS Workshop',
       year: '2026',
       authors: 'Thanh-Nghia Truong, Hung Tuan Nguyen, Cuong Tuan Nguyen, Masaki Nakagawa',
       abstract: 'This paper studies symbol-level structure refinement for online handwritten mathematical expression recognition. An upstream primitive stage first produces candidate symbols and relations, then an edge-aware graph neural network refines this candidate graph into a labeled Symbol Label Graph. Unlike binary link-prediction refinement, the method predicts multi-class structural relations on candidate edges, allowing it to correct both edge existence and relation labels. The model integrates primitive relation priors, confidence scores, and pairwise symbol geometry into graph message passing, with auxiliary losses for edge existence and positive-edge relation prediction. Experiments on CROHME 2014, 2016, and 2019 show substantial gains over the primitive graph baseline and prior binary link-prediction refinement.',
@@ -14,7 +14,7 @@
         'Introduces auxiliary objectives for edge existence and positive-edge relation prediction to stabilize training on sparse, imbalanced candidate graphs.',
         'Reports strong CROHME results, including valid-sample labeled graph exact rates of 70.66%, 70.29%, and 73.27% on CROHME 2014, 2016, and 2019.'
       ],
-      authorComment: 'Accepted to DAS 2026. Public paper access will be updated after an official URL or DOI is available.'
+      authorComment: 'Accepted to DAS 2026 workshop. Public paper access will be updated after an official URL or DOI is available.'
     },
     {
       slug: 'survey-handwritten-mathematical-expression-recognition-2024',
