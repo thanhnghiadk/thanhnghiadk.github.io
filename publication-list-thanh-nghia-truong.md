@@ -1,6 +1,6 @@
 # Publication List - Thanh-Nghia Truong
 
-Draft based on `2026_7_8_Publicaitons since around 2015 for your applications.docx` and the current website publication pages. Last reviewed: 2026-07-09.
+Draft based on `2026_7_8_Publicaitons since around 2015 for your applications.docx` and the current website publication pages. Last reviewed: 2026-07-09. ICDAR and DAS 2026 entries verified against Springer on 2026-09-29.
 
 ## Summary
 
@@ -20,8 +20,8 @@ Draft based on `2026_7_8_Publicaitons since around 2015 for your applications.do
 
 ## Refereed International Conference and Workshop Papers
 
-1. **Thanh-Nghia Truong**, Hung Tuan Nguyen, Cuong Tuan Nguyen, and Masaki Nakagawa. "Edge-Aware Relation Prediction for Symbol-Level Structure Refinement in Online Handwritten Mathematical Expressions." To appear in *Proc. DAS 2026*, 2026.
-2. **Thanh-Nghia Truong**, Hung Tuan Nguyen, Nam Tuan Ly, Yoichi Tsuchida, Hiroshi Miyazawa, Tomo Asakura, Masamitsu Ito, Toshihiko Horie, Fumiko Yasuno, and Masaki Nakagawa. "Hierarchical Stroke-Level Clustering and Step-Level Segmentation for Automatic Scoring of Geometric Construction Answers with an Electronic Drawing Compass." To appear in *Proc. ICDAR 2026*, 2026.
+1. **Thanh-Nghia Truong**, Hung Tuan Nguyen, Cuong Tuan Nguyen, and Masaki Nakagawa. "Edge-Aware Relation Prediction for Symbol-Level Structure Refinement in Online Handwritten Mathematical Expressions." *Proc. DAS 2026*, LNCS 16851, pp. 409-424, 2026. DOI: [10.1007/978-3-032-36207-0_24](https://doi.org/10.1007/978-3-032-36207-0_24).
+2. **Thanh-Nghia Truong**, Hung Tuan Nguyen, Nam Tuan Ly, Yoichi Tsuchida, Hiroshi Miyazawa, Tomo Asakura, Masamitsu Ito, Toshihiko Horie, Fumiko Yasuno, and Masaki Nakagawa. "Hierarchical Stroke-Level Clustering and Step-Level Segmentation for Automatic Scoring of Geometric Construction Answers with an Electronic Drawing Compass." *Proc. ICDAR 2026*, LNCS 16974, pp. 662-677, 2026. DOI: [10.1007/978-3-032-36039-7_39](https://doi.org/10.1007/978-3-032-36039-7_39).
 3. Nam Tuan Ly, Hung Tuan Nguyen, **Thanh-Nghia Truong**, Masamitsu Ito, and Masaki Nakagawa. "Contrastive Network-Based Similarity for Zero-Shot Automatic Scoring of Very Short Handwritten Answers." *Proc. Artificial Intelligence in Education (AIED) 2026*, Seoul, Korea, Part III, pp. 132-140, 2026.
 4. **Thanh-Nghia Truong**, Hung Tuan Nguyen, Masaki Nakagawa, and Fumiko Yasuno. "Enhancing LMS-Based Assessment with Handwriting Input: The Design and Implementation of Handwritten Answer Input, Management, and Recognition." *CADGME 2025*, Luxembourg, 2025.
 5. Fumiko Yasuno, Tomo Asakura, Hiroshi Miyazawa, Masamitsu Ito, Toshihiko Horie, **Thanh-Nghia Truong**, and Masaki Nakagawa. "A Digital Compass Approach to Tracking Geometric Constructions for Formative Assessment." *CADGME 2025*, Luxembourg, 2025.
@@ -65,4 +65,4 @@ Draft based on `2026_7_8_Publicaitons since around 2015 for your applications.do
 
 - The AIED 2026 entry differs between sources. The DOCX lists Masamitsu Ito as a co-author and uses "Very Short Handwritten Answers"; the earlier BibTeX pasted into chat listed three authors and the truncated title "Very Short". Confirm the final camera-ready metadata before publishing.
 - The professor DOCX duplicates "Content-Based Similarity for Automatic Scoring of Handwritten Descriptive Answers"; it is counted once here.
-- Some 2026 entries still show `pp. XX-YY` or `to appear`; update these when final page numbers are available.
+- Some other 2026 entries still show `pp. XX-YY` or `to appear`; update these when final page numbers are available.

@@ -4,9 +4,10 @@
       slug: 'edge-aware-relation-prediction-online-hme-2026',
       category: 'hme',
       title: 'Edge-Aware Relation Prediction for Symbol-Level Structure Refinement in Online Handwritten Mathematical Expressions',
-      venue: 'DAS Workshop',
+      venue: 'DAS, LNCS 16851, pp. 409-424',
       year: '2026',
       authors: 'Thanh-Nghia Truong, Hung Tuan Nguyen, Cuong Tuan Nguyen, Masaki Nakagawa',
+      paperUrl: 'https://doi.org/10.1007/978-3-032-36207-0_24',
       abstract: 'This paper studies symbol-level structure refinement for online handwritten mathematical expression recognition. An upstream primitive stage first produces candidate symbols and relations, then an edge-aware graph neural network refines this candidate graph into a labeled Symbol Label Graph. Unlike binary link-prediction refinement, the method predicts multi-class structural relations on candidate edges, allowing it to correct both edge existence and relation labels. The model integrates primitive relation priors, confidence scores, and pairwise symbol geometry into graph message passing, with auxiliary losses for edge existence and positive-edge relation prediction. Experiments on CROHME 2014, 2016, and 2019 show substantial gains over the primitive graph baseline and prior binary link-prediction refinement.',
       contributions: [
         'Reformulates symbol-level graph refinement for online HME recognition from binary link prediction to multi-class relation prediction.',
@@ -14,7 +15,7 @@
         'Introduces auxiliary objectives for edge existence and positive-edge relation prediction to stabilize training on sparse, imbalanced candidate graphs.',
         'Reports strong CROHME results, including valid-sample labeled graph exact rates of 70.66%, 70.29%, and 73.27% on CROHME 2014, 2016, and 2019.'
       ],
-      authorComment: 'Accepted to DAS 2026 workshop. Public paper access will be updated after an official URL or DOI is available.'
+      authorComment: 'Published in the DAS 2026 proceedings; the publisher page is linked above.'
     },
     {
       slug: 'survey-handwritten-mathematical-expression-recognition-2024',
@@ -135,16 +136,18 @@
       slug: 'ecompass-geometric-construction-scoring-2026',
       category: 'scoring',
       title: 'Hierarchical Stroke-Level Clustering and Step-Level Segmentation for Automatic Scoring of Geometric Construction Answers with an Electronic Drawing Compass',
-      venue: 'ICDAR',
+      venue: 'ICDAR, LNCS 16974, pp. 662-677',
       year: '2026',
-      authors: 'Authors to be added after the camera-ready metadata is confirmed',
-      abstract: 'This paper studies automatic scoring of geometric construction answers captured with an electronic drawing compass. The method uses time-ordered compass, pencil, and eraser strokes to reconstruct arcs, lines, centers, radii, and intersections, then evaluates whether required construction procedures were followed. Experiments on perpendicular bisector, angle bisector, and regular hexagon tasks show promising accuracy with partial-credit scoring and rejection for uncertain cases.',
+      authors: 'Thanh-Nghia Truong, Hung Tuan Nguyen, Nam Tuan Ly, Yoichi Tsuchida, Hiroshi Miyazawa, Tomo Asakura, Masamitsu Ito, Toshihiko Horie, Fumiko Yasuno, Masaki Nakagawa',
+      paperUrl: 'https://doi.org/10.1007/978-3-032-36039-7_39',
+      abstract: 'This paper presents automatic scoring of geometric construction answers captured with an electronic drawing compass. The method uses time-ordered compass, pencil, and eraser strokes to reconstruct arcs, lines, centers, radii, and intersections, then checks whether required construction steps were followed. On 2,000 student answers from 20 tasks, it achieved 0.722 binary accuracy and 0.754 F1; precision for non-rejected answers was 0.935.',
       contributions: [
         'Builds a scoring-oriented segmentation and clustering pipeline for mixed compass, pencil, and eraser stroke streams.',
         'Reconstructs geometric primitives and step order from fragmented e-compass input.',
         'Applies rubric-based scoring with partial credit and a rejection option for uncertain cases.',
-        'Evaluates the approach on three representative geometric construction tasks with error analysis.'
-      ]
+        'Evaluates 2,000 answers across 20 tasks, with detailed analysis of three representative tasks.'
+      ],
+      authorComment: 'Published in the ICDAR 2026 proceedings; the publisher page is linked above.'
     },
     {
       slug: 'automatic-scoring-digitized-handwritten-answers-2026',
